@@ -1,0 +1,24 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+* {
+  font-family: 'Raleway', sans-serif;
+  outline: none !important;
+}
+
+.fab {
+  display: flex !important;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* ESTILO VEM AQUI */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
