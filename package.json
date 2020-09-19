@@ -1,24 +1,41 @@
 {
-  "name": "guia-longevidade",
+  "name": "react-tailwind",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "repository": "",
-  "author": "",
-  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "next": "^9.5.2",
+    "@brancol/react-snackbar": "^0.0.1",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "tailwindcss": "^1.5.2",
+    "typescript": "^4.0.3"
   },
-  "devDependencies": {
-    "@types/node": "^14.6.1",
-    "@types/react": "^16.9.48",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.3",
-    "typescript": "^4.0.2"
+  "scripts": {
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "start": "npm run build:style && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -9,26 +9,17 @@
 /*----------- Indexes -----------*/
 
 /**
- * General Code
+ * Tailwind
  */
 
 /*------------------------------------
-  General Code
+  Tailwind
 ------------------------------------*/
 
-* {
-  outline: none;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+/* purgecss end ignore */
 
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
